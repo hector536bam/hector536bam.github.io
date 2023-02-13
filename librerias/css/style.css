@@ -1,0 +1,569 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+/*COLORES*/
+:root {
+    --primary: #3155e7;
+    --primary-dark: #2045d6;
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2: #d3d4db;
+    --white: #ffffff;
+    --red: #c42a2a;
+    --body: #0d192b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body);
+}
+
+body img {
+    width: 17.5px;
+    height: 17.5px;
+}
+
+body .navbar-brand {
+    font-size: 17.5px;
+    color: var(--white);
+}
+
+body .navbar-brand:hover {
+    color: var(--red);
+}
+
+/*NAVBAR*/
+.navbar {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    background-color: #1c2042;
+}
+
+.nav-link {
+    margin-left: 40px;
+    font-size: 15px;
+    color: var(--white);
+}
+
+.nav-link:hover {
+    color: var(--red);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--white);
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: var(--red);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    border: 1px solid red;
+}
+
+/*SECCION INICIO*/
+section.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( -45deg, #150d2b, #1e1638, #141944, #172f38, #143f42);
+    /*background: linear-gradient( -45deg, #ee7752, #e73c7e, #9581f4, #23a6d5, #23d5ab);*/
+    background-size: 400% 400%;
+    position:relative;
+    animation: movimiento 10s ease infinite;
+ }
+
+@keyframes movimiento {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+}
+
+.textInicio1 {
+    padding-top: 50%;
+    padding-bottom: 2.5px;
+    font-weight: 400;
+    font-size: 22.5px;
+    font-weight: lighter;
+    color: var(--white);
+}
+
+.textInicio2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 50px;
+    color: var(--white);
+}
+
+.textInicio3 {
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 22.5px;
+    line-height: 25px;
+    font-weight: lighter;
+
+    color: var(--white);
+}
+
+.button {
+    padding: 0px 0;
+    padding-top: 15px;
+}
+
+.button .btn-success {
+    color: var(--white);
+    background-color: var(--red);
+    font-size: 22.5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+}
+
+.button .btn-success:hover {
+    color: var(--black);
+    background-color: var(--gray-2);
+    font-size: 22.5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 #ff0000, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+}
+
+.button .btn-success:focus {
+    background-color: var(--gray-2);
+    color: var(--black);
+}
+
+.avatar {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    top: 40%;
+    left: 40%;
+}
+
+/*SECCION SOBRE Mí*/
+section.aboutme {
+    width: 100%;
+    height: 100vh;
+    background-size: 400% 400%;
+    position:relative;
+    animation: movimiento 10s ease infinite;
+ }
+
+.titulo1 {
+    padding-top: 90px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    color: var(--white);
+ }
+
+.titulo2 {
+    text-align: center;
+    padding-top: 117.5px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 27.5px;
+    color: var(--white);
+}
+.titulo3 {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 27.5px;
+    color: var(--white);
+ }
+
+ .titulo3-5 {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 27.5px;
+    color: var(--white);
+ }
+
+.TJustify {
+    text-align: justify;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white);
+ }
+.TCenter {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white);
+ }
+
+section.aboutme .gallery {
+    width:auto;
+    height: auto;
+    overflow-x: scroll;
+    background-color: #1c2a44;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+}
+
+section.aboutme .gallery:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #ff0000, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+}
+
+section.aboutme .img-gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+section.aboutme img {
+    width: 115px;
+    height: 115px;
+    box-shadow: 0px 0px 15px var(--black);
+    margin-right: 50px;
+}
+
+/*SECCION PROYECTOS*/
+section.projects {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--body);
+    background-size: 400% 400%;
+    position:relative;
+}
+
+.titulo4 {
+    padding-top: 90px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 45px;
+    color: var(--white);
+ }
+
+ section.projects .cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+ }
+
+ section.projects .card {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+    background-color: #1c2a44;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+ }
+
+ section.projects .card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #ff0000, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+ }
+
+ section.projects .card img.icon{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+ }
+
+ section.projects .card .card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--white);
+    font-size: 20px;
+ }
+
+ section.projects .card .card-text {
+    padding-top: 20px;
+    color: var(--white);
+    font-size: 15px;
+    text-align: justify;
+ }
+
+ section.projects .card .card-title2 {
+    padding-top: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--white);
+    font-size: 17.5px;
+ }
+
+
+/*SECCION CURSOS*/
+section.courses {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--body);
+    background-size: 400% 400%;
+    position:relative;
+ }
+
+ section.courses .gallery2 {
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    background-color: #1c2a44;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+}
+
+section.courses .gallery2:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #ff0000, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+}
+
+section.courses .img-gallery2 {
+    display:flex;
+    flex-direction: row;
+}
+
+section.courses img {
+    width: 115px;
+    height: 115px;
+    box-shadow: 0px 0px 15px var(--black);
+    margin-right: 33px;
+}
+ /*SECCION CONTACTO*/
+section.contact {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--body);
+    background-size: 400% 400%;
+    position:relative;
+ }
+
+ section.contact .titulo3 {
+    padding-top: 150px;
+ }
+
+ section.contact .img-gallery3 {
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+}
+
+section.contact img {
+    width: 115px;
+    height: 115px;
+    box-shadow: 0 4px 8px 0 #00ffff, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+    margin-right: 33px;
+}
+
+section.contact img:hover {
+    width: 115px;
+    height: 115px;
+    box-shadow: 0 4px 8px 0 #ff0000, 0 8px 22px 0 rgba(0,  0, 0, 0.19);
+    margin-right: 33px;
+}
+
+/*FOOTER*/
+footer {
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #1c2042;
+    text-align: center;
+    font-size: 15px;
+}
+footer p{
+    padding-top: 15px;
+}
+/*  RESPONSIVE SECTION */
+@media (max-width: 576px) {
+    section.home,
+    section.aboutme,
+    section.projects {
+        text-align: center;
+    }
+
+    /* NAVBAR SECTION*/
+    .navbar {
+        position: fixed;
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /*INICIO SECTION*/
+    
+    .textInicio1 {
+        padding-top: 100px;
+        padding-bottom: 2.5px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .textInicio2 {
+        font-size: 45px;
+    }
+    .textInicio3 {
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .button {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .button .btn-success {
+        margin-left: 0 !important;
+    }
+
+    .avatar {
+        top: 50px; /* ajustar los valores para mover la imagen */
+        left: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* TEXTOS*/
+    .titulo1 {
+        padding-top: 60px;
+        font-weight: 800;
+        font-size: 45px;
+     }
+    .titulo2 {
+        padding-top: 20PX;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .titulo3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+     }
+     .titulo3-5 {
+        padding-top: 5px;
+        padding-bottom: 2px;
+        font-weight: 400;
+        font-size: 20px;
+     }
+    .TJustify {
+        padding-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+     }
+    .TCenter {
+        padding-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+     }
+
+     section.projects .TCenter{
+        padding-top: 30px;
+     }
+
+     section.courses .TCenter{
+        padding-top: 30px;
+     }
+
+     section.courses .titulo3-5{
+        padding-top: 40px;
+     }
+
+     section.contact .TCenter{
+        padding-top: 30px;
+     }
+
+     /*GALLERY 1*/
+    section.aboutme img {
+        width: 75px;
+        height: 75px;
+        box-shadow: 0px 0px 15px var(--black);
+        margin-right: 20px;
+    }
+
+    /*CARD*/
+    section.projects .cards {
+        padding-top: 120px;
+     }
+     section.projects .card {
+        width: 250px;
+        height: 320px;
+        margin: 17px;
+     }
+    section.projects .card img.icon{
+        margin: auto;
+        width: 80px;
+        height: 80px;
+     }
+     section.projects .card .card-title {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: var(--white);
+        font-size: 15px;
+     }
+     section.projects .card .card-text {
+        padding-top: 15px;
+        color: var(--white);
+        font-size: 15px;
+        text-align: justify;
+     }
+     section.projects .card .card-title2 {
+        padding-top: 15px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: var(--white);
+        font-size: 15px;
+     }
+
+     /*GALLERY 2*/
+     section.courses .TJustify {
+        padding-bottom: 20px;
+
+     }
+    section.courses img {
+        width: 75px;
+        height: 75px;
+        box-shadow: 0px 0px 15px var(--black);
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    /*GALLERY 3*/
+    section.contact img {
+        width: 75px;
+        height: 75px;
+        box-shadow: 0px 0px 15px var(--black);
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    /* FOOTER SECTION*/
+    section.contact footer {
+        padding: 2px;
+    }
+}
